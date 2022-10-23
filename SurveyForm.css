@@ -1,0 +1,70 @@
+:root{
+    --background-color: rgb(42, 52, 100);
+    --text-color: rgb(255, 255, 255);
+    --input-box-color: rgb(117, 95, 168);
+  }
+  form{
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0px auto;
+  padding-bottom: 2em;
+  background-color: var(--background-color);
+  }
+  
+  label{
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  h1, p{
+    text-align: center;
+  }
+  
+  fieldset{
+    border: none;
+    border-bottom: 3px solid black;
+  }
+  
+  input{
+    width: 100%;
+  }
+  
+  #submit{
+    width: 80%;
+    height: 5%;
+    position: relative;
+    left: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  input, textarea, select{
+    background-color: var(--input-box-color);
+    border: 1px solid #0a0a23;
+    color: var(--text-color);
+  }
+  
+  input, select{
+    height: 3%;
+  }
+  input::placeholder{
+    color: var(--text-color);
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color:var(--text-color);
+    font-family: Tahoma;
+    font-size: 16px;
+     background:linear-gradient(0deg, rgba(42, 52, 100, 0.5), rgba(42, 52, 100, 0.5)), url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }

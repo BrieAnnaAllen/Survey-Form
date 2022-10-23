@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="SurveyForm.css"> 
+<h1 id="title">Video Game Survey Form</h1>
+<p id="description">Please answer all questions on this form to the best of your ability.<br> We thank you for taking the time to complete our survey!</p>
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name">Name: </label> <input id="name" name="name" type="text" placeholder="Please enter your full name" required />
+
+    <label id="email-label" for="email">Email: </label>
+    <input id="email" name="email" type="email" placeholder="Please enter your email" required />
+    <label id="number-label" for="age">Age:<em>(optional)</em></label>
+    <input id="number" name="number" type="number" min="10" max="100" placeholder="Please enter your age" />
+    
+    <label id="number-label" for="age">Which option best describes your current role?</label>
+<select id="dropdown">
+  <option value =""> (Select one)</option>
+  <option value ="1">Student</option>
+  <option value ="2">Full Time Job</option>
+  <option value ="3">Full Time Learner</option>
+  <option value ="4">Prefer not to say</option>
+  <option value ="5">Other</option>
+  </select>
+    </fieldset>
+    <fieldset>
+
+  <label>When did you first begin playing video games?</label>
+
+  <label for="child"><input id="child" type="radio" name="age-start" class="inline" value="1" /> Child (00 - 14 years old)</label>
+  <label for="youth"><input id="youth" type="radio" name="age-start" class="inline" value="2"/> Youth (15 - 18 years old)</label>
+  <label for="young-adult"><input id="young-adult" type="radio" name="age-start" class="inline" value="3"/> Young Adulhood (18 - 25 years old) </label>
+  <label for="adult"><input id="adult" type="radio" name="age-start"class="inline" value="4"/> Adulthood (25 - 64 years old)</label>
+  <label for="senior"><input id="senior" type="radio" name="age-start"class="inline" value="5"/> Senior (65 or older years old)</label>
+  <label for="never"><input id="never" type="radio" name="age-start"class="inline" value="4"/> I have never played video games</label>
+  <label for="unsure"><input id="unsure" type="radio" name="age-start"class="inline" value="4"/> Not sure</label>
+      </fieldset>
+
+      <fieldset>
+        <label>What consoles have you played before? (check all that apply)</label>
+        <label><input  type="checkbox" value="1" class="inline"/>  Gameboy Advance</label>
+        <label><input type="checkbox" value="2" class="inline"/>Playstation 5</label>
+        <label><input type="checkbox" value="3" class="inline"/>Playstation 4</label>
+        <label><input type="checkbox" value="4" class="inline"/>Nintendo Switch</label>
+        <label><input type="checkbox" value="5" class="inline"/>Wii U</label>
+        <label><input type="checkbox" value="6" class="inline"/>PC</label>
+        <label><input type="checkbox" value="7" class="inline"/>Xbox 360</label>
+        <label><input type="checkbox" value="8" class="inline"/>Xbox One</label>
+        <label><input type="checkbox" value="3" class="inline"/>A console(s) that is not listed</label>
+        </fieldset>
+        
+      <fieldset>
+
+        <label>Please list some of your favorite games!
+        </label>
+        <textarea id="bio" rows="6" cols="61">
+            </textarea>
+        </fieldset>
+    <input id="submit" type="Submit"/>
+  </form>
+  </html>
